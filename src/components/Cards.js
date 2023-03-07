@@ -1,8 +1,5 @@
-import React from "react";
-import { ReactDOM } from "react";
 import Card from "./Card";
 import data from "../data";
-
 
 const Cards = () => {
     return (

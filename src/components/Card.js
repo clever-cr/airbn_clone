@@ -1,8 +1,3 @@
-import React from "react";
-
-
-
-
 const Card = (props) => {
     let badgeText
     if (props.openSpots === 0) {
