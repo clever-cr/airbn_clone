@@ -15,7 +15,7 @@ const Card = (props) => {
             {badgeText && <div className="card--badge">{badgeText}</div>}
             <img src={props.img} className="card--image" alt="" />
             <div className="flex items-center">
-                <img src="/star.png" className="card--star" />
+                <img src="/star.png" alt="star" className="card--star" />
                 <p className="">{props.rating} </p>
                 <p className="gray"> {props.reviewCount} •</p>
                 <p className="gray">{props.location}</p>

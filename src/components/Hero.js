@@ -4,7 +4,7 @@ const Hero = () => {
     return (
         <div>
             <div className="flex justify-center pt-[26px]">
-                <img src="/Group 77.png" alt="" />
+                <img src="/Group 77.png" alt="group" />
             </div>
 
             <div className="px-[401px] pt-24">
