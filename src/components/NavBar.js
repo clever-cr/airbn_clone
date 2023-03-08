@@ -1,5 +1,3 @@
-import React from "react";
-
 const NavBar = () => {
     return (
         <div className="px-[30px] py-[22px]  drop-shadow-lg- shadow-xl">

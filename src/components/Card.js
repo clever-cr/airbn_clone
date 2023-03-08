@@ -1,23 +1,23 @@
-const Card = (props) => {
+const Card = ({ openSpots, location, img, rating, reviewCount, title, price }) => {
     let badgeText
-    if (props.openSpots === 0) {
+    if (openSpots === 0) {
         badgeText = "SOLD OUT"
-    } else if (props.location === "Online") {
+    } else if (location === "Online") {
         badgeText = "ONLINE"
     }
     return (
         <div className="card">
             {badgeText && <div className="card--badge">{badgeText}</div>}
-            <img src={props.img} className="card--image" alt="" />
+            <img src={img} className="card--image" alt="" />
             <div className="flex items-center">
                 <img src="/star.png" alt="star" className="card--star" />
-                <p className="">{props.rating} </p>
-                <p className="gray"> {props.reviewCount} •</p>
-                <p className="gray">{props.location}</p>
+                <p className="">{rating} </p>
+                <p className="gray"> {reviewCount} •</p>
+                <p className="gray">{location}</p>
             </div>
 
-            <p className="card--title">{props.title}</p>
-            <p className="card--price"><span className="bold">From ${props.price}</span> / person</p>
+            <p className="card--title">{title}</p>
+            <p className="card--price"><span className="bold">From ${price}</span> / person</p>
         </div >
     )
 }
